@@ -4,15 +4,29 @@ body {
   margin: 0;
 }
 
+div.wasatch{
+  background-color: #FFFFFF;
+  height: 1000px;
+  width: max-width;
+  padding: 1px;
+}
+
+div.sunset{
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/03/62/70/036270a00af799b8fa9b0a299ebe97f8.jpg);
+  height: 1000px;
+  width: max-width;
+  padding: 1px;
+}
+
 h1 {
   text-align: center;
-  color: white;
+  color: black;
   font-family: calibri;
 }
 
 p {
   text-align: center;
-  color: white;
+  color: black;
   font-family: calibri;
   font-size: 120%;
 }
