@@ -4,6 +4,19 @@ body {
   margin: 0; /* ensures that page takes up entire browser window */
 }
 
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  width: 40px;
+}
+
 div.wasatch{ /* the letter O. track 2. */
   background-color: #FFFFFF;
   height: 1000px;
