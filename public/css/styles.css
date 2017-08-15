@@ -20,8 +20,6 @@ div.sunset{ /* should replace with own image eventually */
 
 /* title header */
 h1 {
-  position: absolute;
-  top: 500px;
   text-align: center;
   color: black;
   font-family: calibri;
