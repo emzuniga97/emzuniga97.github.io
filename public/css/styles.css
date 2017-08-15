@@ -1,29 +1,33 @@
 
 body {
-  background-color: #000020;
-  margin: 0;
+  background-color: #FFFFFF;
+  margin: 0; /* ensures that page takes up entire browser window */
 }
 
-div.wasatch{
+div.wasatch{ /* the letter O. track 2. */
   background-color: #FFFFFF;
   height: 1000px;
   width: max-width;
   padding: 1px;
 }
 
-div.sunset{
+div.sunset{ /* should replace with own image eventually */
   background-image: url(https://s-media-cache-ak0.pinimg.com/originals/03/62/70/036270a00af799b8fa9b0a299ebe97f8.jpg);
   height: 1000px;
   width: max-width;
   padding: 1px;
 }
 
+/* title header */
 h1 {
+  position: absolute;
+  top: 500px;
   text-align: center;
   color: black;
   font-family: calibri;
 }
 
+/* first paragraphs */
 p {
   text-align: center;
   color: black;
