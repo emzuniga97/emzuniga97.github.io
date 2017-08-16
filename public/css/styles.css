@@ -14,7 +14,12 @@ ul{
 
 li a {
   display: block;
-  width: 40px;
+  width: 100px;
+  padding: 8px 16px
+}
+
+li a:hover {
+  color: red;
 }
 
 div.wasatch{ /* the letter O. track 2. */
