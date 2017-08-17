@@ -6,7 +6,6 @@ var protoDrop = new Path.Circle({
 });
 
 var drop = new Symbol(protoDrop);
-drop.applyMatrix = false;
 
 function onMouseUp(event){
   var single = drop.place(event.point);
@@ -20,6 +19,7 @@ function onFrame(event){
   for (var i = 0; i < children.length; i++){
     child = children[i];
 
+    child.applyMatrix = false;
     console.log(child.scaling);
     if (child.scaling < 5.0){
       child.scale(1.05);
