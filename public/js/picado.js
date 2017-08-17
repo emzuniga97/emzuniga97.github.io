@@ -19,9 +19,9 @@ function onFrame(event){
   for (var i = 0; i < children.length; i++){
     child = children[i];
 
-    if (child.scaling.x < 10){
-      child.scale(1.02);
-      child.opacity *= 0.98;
+    if (child.scaling.x < 15){
+      child.scale(1.01);
+      child.opacity *= 0.999;
     }
   }
 }
