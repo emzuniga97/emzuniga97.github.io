@@ -14,7 +14,7 @@ var protoDrop = new Path.Circle({
 var drop = new Symbol(protoDrop);
 
 function onMouseClick(event){
-  drop.place(event.point);
+  var single = drop.place(event.point);
 }
 
 function onFrame(event){
