@@ -19,9 +19,9 @@ function onFrame(event){
   for (var i = 0; i < children.length; i++){
     child = children[i];
 
-//    if (child.definition.radius < 200){
-      child.scale(1.25);
+    if (child.scaling < 5.0){
+      child.scale(1.05);
     //  child.definition.opacity *= 0.75;
-  //  }
+    }
   }
 }
