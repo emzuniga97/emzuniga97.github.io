@@ -1,44 +1,46 @@
-// var protoDrop = new Path.Circle({
-//   center: [0,0],
-//   radius: 10,
-//   fillColor: 'black',
-//   strokeColor: 'black'
-// });
-
-// var drop = new Symbol(protoDrop);
 var drops = [];
 
-function Drop (rgb, loc){
-  this.core = new Path.Circle({
-    center: loc,
-    radius: 10,
-    fillColor.hue: rgb,
-    strokeColor.hue: rgb
-  })
+function Drop (rgb, loc){ // prototype for droplets
+    this.core = new Path.Circle({
+      center: loc,
+      radius: 10,
+      fillColor: {hue: rgb, saturation: 1, brightness: 1},
+      strokeColor: {hue: rgb, saturation: 1, brightness: 1}
+    })
+    this.core.applyMatrix = false;
+}
+
+Drop.prototype = {
+
+    grow: function(factor, limit, peers) { // ripples out drop
+
+       if (this.core.scaling.x < limit){
+          var speedup = 1 + peers / 100;
+          //console.log(speedup);
+          this.core.scale(factor * speedup);
+       }
+
+       if (this.core.opacity > 0.001){
+           this.core.opacity *= .99;
+       } else {
+           this.core.opacity = 0;
+       }
+    }
 }
 
 function onMouseUp(event){
-//  drop.definition.fillColor.hue = Math.random() * 360;
-//  var single = drop.place(event.point);
-  var color = Math.random() * 360;
-  droplets.push(new Drop(color, event.point));
-  console.log(event.point.x);
-  console.log(event.point.y);
+    var colorHue = Math.random() * 360; 
+    drops.push(new Drop(colorHue, event.point));
 }
 
 function onFrame(event){
-  for (var i = 0; i < drops.length; i++){
-    single = drops[i];
+    for (var i = 0; i < drops.length; i++){
 
-    if (single.core.radius < 30){
-      single.core.radius *= 1.04;
+       single = drops[i];
+       single.grow(1.04,25, drops.length);
+
+       if(single.core.opacity == 0){
+         drops.splice(i, 1); // remove old drops
+       }
     }
-
-    // if (child.opacity > 0.001){
-    //   child.opacity *= 0.99;
-    // } else {
-    //   child.opacity = 0;
-    // }
-
-  }
 }
