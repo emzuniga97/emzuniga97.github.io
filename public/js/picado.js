@@ -8,7 +8,7 @@ var protoDrop = new Path.Circle({
 var drop = new Symbol(protoDrop);
 
 function onMouseUp(event){
-  drop.fillColor.hue = Math.random() * 360;
+  drop.definition.fillColor.hue = Math.random() * 360;
   var single = drop.place(event.point);
   console.log(event.point.x);
   console.log(event.point.y);
