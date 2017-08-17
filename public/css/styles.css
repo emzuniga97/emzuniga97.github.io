@@ -39,6 +39,11 @@ div.sunset{ /* should replace with own image eventually */
   padding: 1px;
 }
 
+#bluCanvas{
+  height: 100%;
+  width: 100%;
+}
+
 /* title header */
 h1 {
   text-align: center;
