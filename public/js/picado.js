@@ -23,7 +23,7 @@ function onFrame(event){
 //      child.scale(1.04);
 //    }
 
-    if (child.opacity > 0.01){
+    if (child.opacity > 0.5){
       child.opacity *= 0.99;
       child.scale(1.04);
     } else {
