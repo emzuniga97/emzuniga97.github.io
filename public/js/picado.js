@@ -19,7 +19,7 @@ function onFrame(event){
   for (var i = 0; i < children.length; i++){
     child = children[i];
 
-    if (child.scaling.x < 15){
+    if (child.opacity > 0.5){
       child.scale(1.005);
       child.opacity *= 0.999999;
     }
