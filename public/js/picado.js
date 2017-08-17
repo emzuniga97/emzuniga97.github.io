@@ -20,8 +20,14 @@ function onFrame(event){
     child = children[i];
 
     if (child.scaling.x < 25){
-      child.scale(1.02);
-      child.opacity *= 0.99;
+      child.scale(1.04);
     }
+
+    if (child.opacity > 0.01){
+      child.opacity *= 0.99;
+    } else {
+      child.opacity = 0;
+    }
+    
   }
 }
