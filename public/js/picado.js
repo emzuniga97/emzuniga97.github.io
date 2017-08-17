@@ -9,7 +9,7 @@ var drop = new Symbol(protoDrop);
 
 function onMouseUp(event){
   var single = drop.place(event.point);
-  single.fillColor = Math.random() * 360;
+  single.fillColor.hue = Math.random() * 360;
   console.log(event.point.x);
   console.log(event.point.y);
 }
