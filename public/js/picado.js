@@ -12,3 +12,14 @@ function onMouseUp(event){
   console.log(event.point.x);
   console.log(event.point.y);
 }
+
+function onFrame(event){
+  for (var i = 0; i < children.length; i++){
+    child = children[i];
+
+    if (child.definition.radius < 200){
+      child.definition.radius += 1;
+    //  child.definition.opacity *= 0.75;
+    }
+  }
+}
