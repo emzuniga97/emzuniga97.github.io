@@ -57,6 +57,7 @@ h1 {
   color: black;
   font-family: calibri;
   position: absolute;
+  width: 100%;
   left: 0;
   top: 40%;
   z-index: 1;
@@ -65,9 +66,10 @@ h1 {
 /* first paragraphs */
 p {
   text-align: center;
-  color: black;
+  color: red;
   font-family: calibri;
   font-size: 120%;
+  width: 100%;
   position: absolute;
   left: 0;
   top: 50%
