@@ -19,13 +19,12 @@ function onFrame(event){
   for (var i = 0; i < children.length; i++){
     child = children[i];
 
-//    if (child.scaling.x < 30){
-//      child.scale(1.04);
-//    }
-
-    if (child.opacity > 0.5){
-      child.opacity *= 0.99;
+    if (child.scaling.x < 40){
       child.scale(1.04);
+    }
+
+    if (child.opacity > 0.001){
+      child.opacity *= 0.99;
     } else {
       child.opacity = 0;
     }
