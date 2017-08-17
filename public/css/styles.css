@@ -57,7 +57,8 @@ h1 {
   color: black;
   font-family: calibri;
   position: absolute;
-  top: 50%;
+  left: 0;
+  top: 40%;
   z-index: 1;
 }
 
@@ -67,5 +68,8 @@ p {
   color: black;
   font-family: calibri;
   font-size: 120%;
+  position: absolute;
+  left: 0;
+  top: 50%
   z-index: 1;
 }
