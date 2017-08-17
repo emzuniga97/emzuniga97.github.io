@@ -6,6 +6,7 @@ var protoDrop = new Path.Circle({
 });
 
 var drop = new Symbol(protoDrop);
+drop.applyMatrix = false;
 
 function onMouseUp(event){
   var single = drop.place(event.point);
