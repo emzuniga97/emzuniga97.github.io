@@ -13,6 +13,8 @@ function onMouseUp(event){
   console.log(event.point.y);
 }
 
+var children = project.activeLayer.children;
+
 function onFrame(event){
   for (var i = 0; i < children.length; i++){
     child = children[i];
