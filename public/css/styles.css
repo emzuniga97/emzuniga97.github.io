@@ -30,8 +30,7 @@ div.wasatch{ /* the letter O. track 2. */
   height: 1000px;
   width: max-width;
   padding: 1px;
-  position: fixed;
-  z-index: -2;
+  z-index: -1;
 }
 
 div.boxes{
@@ -50,7 +49,6 @@ div.sunset{ /* should replace with own image eventually */
 #bluCanvas{
   height: 100%;
   width: 100%;
-  position: fixed;
 }
 
 /* title header */
