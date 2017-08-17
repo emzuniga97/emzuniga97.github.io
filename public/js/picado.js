@@ -20,7 +20,7 @@ function onFrame(event){
     child = children[i];
 
 //    if (child.definition.radius < 200){
-      child.definition.radius += 1;
+      child.scale(1.25);
     //  child.definition.opacity *= 0.75;
   //  }
   }
