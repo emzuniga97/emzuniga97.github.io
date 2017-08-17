@@ -21,7 +21,7 @@ function onFrame(event){
 
     if (child.scaling.x < 5){
       child.scale(1.05);
-      child.definition.opacity *= 0.75;
+      child.opacity *= 0.75;
     }
   }
 }
