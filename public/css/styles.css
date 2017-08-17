@@ -26,7 +26,15 @@ li a:hover {
 }
 
 div.wasatch{ /* the letter O. track 2. */
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
+  height: 1000px;
+  width: max-width;
+  padding: 1px;
+  position: fixed;
+  z-index: -2;
+}
+
+div.boxes{
   height: 1000px;
   width: max-width;
   padding: 1px;
@@ -42,8 +50,7 @@ div.sunset{ /* should replace with own image eventually */
 #bluCanvas{
   height: 100%;
   width: 100%;
-  z-index: -1;
-  position: static;
+  position: fixed;
 }
 
 /* title header */
