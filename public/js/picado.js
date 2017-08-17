@@ -9,6 +9,7 @@ var drop = new Symbol(protoDrop);
 
 function onMouseUp(event){
   var single = drop.place(event.point);
+  single.fillColor = Math.random() * 360;
   console.log(event.point.x);
   console.log(event.point.y);
 }
@@ -19,7 +20,7 @@ function onFrame(event){
   for (var i = 0; i < children.length; i++){
     child = children[i];
 
-    if (child.scaling.x < 40){
+    if (child.scaling.x < 30){
       child.scale(1.04);
     }
 
