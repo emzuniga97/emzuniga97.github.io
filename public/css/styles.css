@@ -1,6 +1,7 @@
 
 body {
   background-color: #FFFFFF;
+  height: 100%;
   margin: 0; /* ensures that page takes up entire browser window */
 }
 
@@ -59,7 +60,7 @@ h1 {
   position: absolute;
   width: 100%;
   left: 40px;
-  top: 40px;
+  top: 20px;
   z-index: 1;
 }
 
