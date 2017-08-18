@@ -61,10 +61,11 @@ h1 {
   text-align: left;
   color: black;
   font-family: 'Pattaya', sans-serif;
+  font-size: 120%;
   position: absolute;
   width: 100%;
   left: 40px;
-  top: 20px;
+  top: 15px;
   z-index: 1;
 }
 
