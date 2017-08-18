@@ -55,7 +55,18 @@ div.sunset{ /* should replace with own image eventually */
 h1 {
   text-align: center;
   color: black;
-  font-family: calibri;
+  font-family: 'Pattaya', sans-serif;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 40%;
+  z-index: 1;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+  font-family: 'Martel', serif;
   position: absolute;
   width: 100%;
   left: 0;
