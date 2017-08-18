@@ -58,8 +58,8 @@ h1 {
   font-family: 'Pattaya', sans-serif;
   position: absolute;
   width: 100%;
-  left: 0;
-  top: 5%;
+  left: 40px;
+  top: 40px;
   z-index: 1;
 }
 
