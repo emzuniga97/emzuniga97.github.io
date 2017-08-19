@@ -14,7 +14,7 @@ ul{
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 55px;
+  top: 50px;
   left: 350px;
   background-color: #ffffff;
 }
@@ -29,7 +29,7 @@ li a {
   padding: 30px 40px;
   text-decoration: none;
   font-family: 'Martel', serif;
-  font-size: 20px;
+  font-size: 27px;
   color: black;
 }
 
