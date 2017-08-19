@@ -14,7 +14,7 @@ ul{
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 10px;
+  top: 55px;
   left: 350px;
   background-color: #ffffff;
 }
@@ -29,10 +29,16 @@ li a {
   padding: 30px 40px;
   text-decoration: none;
   font-family: 'Martel', serif;
+  font-size: 20px;
+  color: black;
 }
 
 li a:hover {
   color: red;
+}
+
+li a:visited{
+  color: black;
 }
 
 div.wasatch{ /* the letter O. track 2. */
