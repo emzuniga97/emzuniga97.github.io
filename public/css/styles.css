@@ -16,7 +16,6 @@ ul{
   position: absolute;
   top: 50px;
   left: 350px;
-  background-color: #ffffff;
 }
 
 li {
@@ -30,6 +29,7 @@ li a {
   text-decoration: none;
   font-family: 'Martel', serif;
   font-size: 27px;
+  font-weight: bold;
   color: black;
 }
 
