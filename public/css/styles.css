@@ -52,7 +52,6 @@ div.boxes{
   height: 130px;
   width: max-width;
   padding: 1px;
-  z-index: 1;
 }
 
 div.sunset{ /* should replace with own image eventually */
@@ -68,7 +67,6 @@ div.sunset{ /* should replace with own image eventually */
   position: absolute;
   top: 0px;
   left: 0px;
-  z-index: 2;
 }
 
 /* title header */
