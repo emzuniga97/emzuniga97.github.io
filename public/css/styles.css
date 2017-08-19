@@ -20,12 +20,16 @@ ul{
 
 li {
   float: left;
+  width: 100px;
+  margin-left: 30px;
+  padding: 0px 0px 0px 0px;
+  text-align: left;
 }
 
 li a {
   width: 100px;
   height: 100px;
-  padding: 30px 40px;
+  padding: 0px 0px 0px 0px;
   text-decoration: none;
   font-family: 'Martel', serif;
   font-size: 27px;
