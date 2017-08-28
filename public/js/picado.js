@@ -34,6 +34,8 @@ function onMouseUp(event){
     drops.push(new Drop(colorHue, event.point));
 }
 
+var ac, origin, analyser, frequencyData;
+
 function onFrame(event){
     for (var i = 0; i < drops.length; i++){
 
@@ -44,4 +46,19 @@ function onFrame(event){
             drops.splice(i, 1);
         }
     }
+}
+
+var AudioContext = window.AudioContext || window.webkitAudioContext;
+
+if(AudioContext){
+     ac = new AudioContext();
+     origin = ac.createBufferSource();
+     analyser = ac.createAnalyser();
+
+     frequencyData = new Uint8array(analyser.frequencyBinCount);
+     origin.connect(analyser, 0 ,0);
+     origin.connect(ac.destination);
+
+} else {
+  alert('Error playing audio');
 }

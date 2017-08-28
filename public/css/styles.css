@@ -22,11 +22,12 @@ li {
   float: left;
   padding: 0px 0px 0px 0px;
   margin-left: 60px;
+  height: 40px;
 }
 
 li a {
   width: 100px;
-  height: 100px;
+  height: 40px;
   padding: 0px 0px 0px 0px;
   text-decoration: none;
   font-family: 'Martel', serif;
