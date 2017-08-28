@@ -48,6 +48,7 @@ function onFrame(event){
     }
 }
 
+/*
 var AudioContext = window.AudioContext || window.webkitAudioContext;
 
 if(AudioContext){
@@ -62,3 +63,4 @@ if(AudioContext){
 } else {
   alert('Error playing audio');
 }
+*/
