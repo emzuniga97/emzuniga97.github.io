@@ -48,19 +48,41 @@ function onFrame(event){
     }
 }
 
-/*
+
 var AudioContext = window.AudioContext || window.webkitAudioContext;
 
 if(AudioContext){
      ac = new AudioContext();
      origin = ac.createBufferSource();
      analyser = ac.createAnalyser();
-
+     analyser.smoothingTimeConstant = 0.25;
+     analyser.fftSize = 2048;
      frequencyData = new Uint8array(analyser.frequencyBinCount);
      origin.connect(analyser, 0 ,0);
      origin.connect(ac.destination);
 
+     var soundUrl = 'https://emzuniga97.github.io/public/assets/fromEden.mp3';
+     var req = new XMLHttpRequest();
+     req.open("GET", soundUrl, true);
+     req.responseType = "arraybuffer";
+
+     req.onload = function () {
+       ac.decodeAudioData(
+         req.response,
+         function(buffer) {
+           origin.buffer = buffer;
+           origin.loop = true;
+           origin.start(0);
+           view.play();
+         },
+
+         function(buffer){
+           alert("Error loading sound file.");
+         }
+       );
+     };
+     req.send();
+
 } else {
-  alert('Error playing audio');
+     alert('Error playing audio');
 }
-*/
