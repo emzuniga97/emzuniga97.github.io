@@ -57,7 +57,7 @@ if(AudioContext){
      analyser = ac.createAnalyser();
      analyser.smoothingTimeConstant = 0.25;
      analyser.fftSize = 2048;
-     frequencyData = new Uint8array(analyser.frequencyBinCount);
+     frequencyData = new Uint8Array(analyser.frequencyBinCount);
      origin.connect(analyser, 0 ,0);
      origin.connect(ac.destination);
 
