@@ -36,18 +36,24 @@ function onMouseUp(event){
 
 var ac, origin, analyser, frequencyData;
 
+var count = 0;
+
 function onFrame(event){
+
     for (var i = 0; i < drops.length; i++){
 
         single = drops[i];
-        single.grow(1.04,25, drops.length);
+        single.grow(1.04, 25, drops.length);
         if(single.core.opacity < 0.001){
             single.core.opacity = 0;
             drops.splice(i, 1);
         }
     }
     analyser.getByteFrequencyData(frequencyData);
+    count++;
     console.log(frequencyData);
+    console.log(count);
+
 /*
     for(var i = 0; i<analyser.frequencyBinCount; i++){
         console.log(frequencyData);
@@ -78,7 +84,7 @@ if(AudioContext){
          req.response,
          function(buffer) {
            origin.buffer = buffer;
-           origin.loop = true;
+           origin.loop = false;
            origin.start(0);
            view.play();
          },
