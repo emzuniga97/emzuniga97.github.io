@@ -37,6 +37,7 @@ function onMouseUp(event){
 var ac, origin, analyser, frequencyData;
 
 var count = 0;
+var previousVol = 0;
 
 function onFrame(event){
 
@@ -59,6 +60,12 @@ function onFrame(event){
     }
     console.log(volume);
 
+    if (volume > (previousVol + 10000)){
+      console.log("delta sound");
+      var target = Point.random() * view.size;
+      drops.push(new Drop(colorHue, target));
+    }
+    previousVol = volume;
 /*
     for(var i = 0; i<analyser.frequencyBinCount; i++){
         console.log(frequencyData);
