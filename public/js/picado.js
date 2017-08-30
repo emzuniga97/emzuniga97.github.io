@@ -53,7 +53,7 @@ function onFrame(event){
     count++;
     console.log(frequencyData);
     console.log(count);
-    var volume;
+    var volume = 0;
     for (var j = 0; j < frequencyData.length; j++){
       volume += frequencyData[j];
     }
