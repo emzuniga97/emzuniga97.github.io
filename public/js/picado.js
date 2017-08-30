@@ -47,10 +47,12 @@ function onFrame(event){
         }
     }
     analyser.getByteFrequencyData(frequencyData);
-
+    console.log(frequencyData);
+/*
     for(var i = 0; i<analyser.frequencyBinCount; i++){
         console.log(frequencyData);
     }
+*/
 }
 
 
