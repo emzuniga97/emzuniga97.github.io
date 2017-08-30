@@ -17,7 +17,7 @@ Drop.prototype = {
         //console.log(limit);
 
         if (this.core.scaling.x < limit){
-            var speedup = 1 + peers / 100;
+            var speedup = 1 + peers / 500;
           //  console.log(speedup);
             this.core.scale(factor * speedup);
         }
