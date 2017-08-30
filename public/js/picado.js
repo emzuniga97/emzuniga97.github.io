@@ -46,7 +46,7 @@ function onFrame(event){
             drops.splice(i, 1);
         }
     }
-    console.log(Array.apply([], analyser.getByteFrequencyData(frequencyData)).join(","));
+    console.log(new TextDecoder("utf-8").decode(analyser.getByteFrequencyData(frequencyData)));
 }
 
 
