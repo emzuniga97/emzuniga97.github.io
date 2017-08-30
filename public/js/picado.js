@@ -46,7 +46,7 @@ function onFrame(event){
             drops.splice(i, 1);
         }
     }
-    console.log(analyser.getByteFrequencyData(frequencyData));
+    console.log(Array.apply([], analyser.getByteFrequencyData(frequencyData)).join(","));
 }
 
 
