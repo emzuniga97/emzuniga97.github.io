@@ -62,7 +62,8 @@ function onFrame(event){
 
     if (volume > (previousVol + 10000)){
       console.log("delta sound");
-      var target = Point.random() * view.size;
+      var colorHue = Math.random() * 360; // generate random color
+      var target = Point.random() * view.size; // generate random point
       drops.push(new Drop(colorHue, target));
     }
     previousVol = volume;
