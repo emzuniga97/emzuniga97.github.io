@@ -9,6 +9,21 @@ body {
   margin: 0; /* ensures that page takes up entire browser window */
 }
 
+button {
+  margin-top: 20px;
+  line-height: 60px;
+  font-weight: bold;
+  padding: 0 40px;
+  background: white;
+  border: none;
+}
+/*
+button:hover {
+  background: black;
+  color: white;
+}
+*/
+
 ul{
   list-style-type: none;
   margin: 0;

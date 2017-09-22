@@ -1,5 +1,17 @@
 var drops = [];
 
+/*
+var button = document.createElement("button");
+button.innerHTML = "about"
+
+var head = document.getElementById("title/nav")[0];
+head.appendChild(button);
+
+button.addEventListener("click",function(){
+  alert("clicked on button");
+});
+*/
+
 function Drop (rgb, loc){
   this.core = new Path.Circle({
     center: loc,
