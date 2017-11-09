@@ -29,6 +29,14 @@ button {
   margin-left: 10px;
   padding: 0px 0px 0px 0px;
 }
+
+button:hover {
+  color: red;
+}
+
+button:visited{
+  color: var(--maintext);
+}
 /*
 button:hover {
   background: black;
