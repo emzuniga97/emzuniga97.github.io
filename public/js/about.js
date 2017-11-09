@@ -1,3 +1,3 @@
 function clicked(){
-  alert("Clicked about button!");
+  alert("About section coming soon!");
 }

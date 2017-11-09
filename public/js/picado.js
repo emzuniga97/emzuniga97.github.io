@@ -46,6 +46,10 @@ function onMouseUp(event){
     drops.push(new Drop(colorHue, event.point));
 }
 
+// function clicked(){
+//   alert("Clicked about button!");
+// }
+
 var ac, origin, analyser, frequencyData;
 
 var count = 0;
