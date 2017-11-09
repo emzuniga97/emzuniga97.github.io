@@ -1,21 +1,33 @@
+:root{
+  --base: #FFFFFF;
+  --maintext: #000000;
+}
 
 html {
   height: 100%;
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: var(--base);
   height: 100%;
   margin: 0; /* ensures that page takes up entire browser window */
 }
 
 button {
-  margin-top: 20px;
   line-height: 60px;
   font-weight: bold;
-  padding: 0 40px;
-  background: white;
   border: none;
+  font-family: 'Martel', serif;
+  font-size: 30px;
+  color: var(--maintext);
+  background-color: transparent;
+  outline: none;
+  position: absolute;
+  top: -4px;
+  left: 0px;
+  margin-top: 0px;
+  margin-left: 10px;
+  padding: 0px 0px 0px 0px;
 }
 /*
 button:hover {
@@ -26,7 +38,8 @@ button:hover {
 
 ul{
   list-style-type: none;
-  margin: 0;
+  margin-top: 0;
+  margin-left: 40px;
   padding: 0;
   position: absolute;
   top: 45px;
@@ -36,7 +49,7 @@ ul{
 li {
   float: left;
   padding: 0px 0px 0px 0px;
-  margin-left: 60px;
+  margin-left: 80px;
   height: 40px;
 }
 
@@ -47,7 +60,7 @@ li a {
   text-decoration: none;
   font-family: 'Martel', serif;
   font-size: 30px;
-  color: black;
+  color: var(--maintext);
 }
 
 li a:hover {
@@ -55,7 +68,7 @@ li a:hover {
 }
 
 li a:visited{
-  color: black;
+  color: var(--maintext);
 }
 
 div.wasatch{ /* the letter O. track 2. */
@@ -89,7 +102,7 @@ div.sunset{ /* should replace with own image eventually */
 /* title header */
 h1 {
   text-align: left;
-  color: black;
+  color: var(--maintext);
   font-family: 'Pattaya', sans-serif;
   font-size: 47px;
   position: relative;
@@ -101,7 +114,7 @@ h1 {
 
 h2 {
   text-align: center;
-  color: black;
+  color: var(--maintext);
   font-family: 'Martel', serif;
   position: absolute;
   width: 100%;
