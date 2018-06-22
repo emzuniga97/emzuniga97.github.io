@@ -87,9 +87,20 @@ div.wasatch{ /* the letter O. track 2. */
 }
 
 div.boxes{
-  height: 130px;
+  height: 100px;
   width: max-width;
   padding: 1px;
+}
+
+div.aboutStyle{
+  z-index: 1;
+  position: relative;
+  left: 380px;
+  margin-top: 0px;
+  font-size: 13px;
+  font-family: 'Martel', serif;
+  color: var(--maintext);
+  visibility: hidden;
 }
 
 div.sunset{ /* should replace with own image eventually */
